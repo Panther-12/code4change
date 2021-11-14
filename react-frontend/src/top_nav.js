@@ -3,9 +3,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
 import {useEffect, useState} from "react"
+import {Link} from "react-router-dom"
 
 
 // The top navigation bar component
+// The reason for using react router LINK instead of <A> is bacause it loads the required component
+// unlike the <A> which loads the entire page
 class Top_nav extends React.Component{
     render(){
         // javascript arrow function used to open the dropdown
@@ -30,26 +33,19 @@ class Top_nav extends React.Component{
                     <a href=""  id="inactive-link">1.1 INNOVATE</a>
                 </div>
                 <div className="right-side-wrapper">
-                    <a href="#home">HOME</a>
-                    <a href="http://localhost:3001/api/members">MEMBERS</a>
-                    <a href="http://localhost:3001/about">ABOUT</a>
-                    <div className="dropdown">
-                        <button className="projbtn" type="button"
-
-                            onMouseOver={openDropDown}
-
-                            >PROJECTS <i class="fa fa-caret-down"></i></button>
-                        <div className="dropdown-content" 
-                    
-                            onMouseOut = {closeDropDown}
-                            onMouseOver={openDropDown}>
-                            <a href="">Create</a>
-                            <a href="">Ongoing</a>
-                            <a href="">Proposed</a>
-                        </div>
+                    <Link to="/">HOME</Link>
+                    <Link to="/members">MEMBERS</Link>
+                    <Link to="/about">ABOUT</Link>
+                    <Link to="/projects">PROJECTS</Link>
+                </div>
+                <div className="sign-up">
+                    <div className="login">
+                        <Link to="/login">LOG-IN</Link>
+                    </div>
+                    <div className="register">
+                    <Link to="/register">REGISTER</Link>
                     </div>
                 </div>
-  
             </div>
         );
     }
