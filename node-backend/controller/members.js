@@ -23,7 +23,7 @@ const user_registration = []
 
 // Handle user data from registration form
 const Users = (req,res)=>{
-    newUser = req.body
+    const newUser = req.body
     if(newUser !== ''){
         return res.status(200).json(
             {

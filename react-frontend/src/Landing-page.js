@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
+import {Link} from "react-router-dom"
 
 
 
@@ -9,8 +11,8 @@ class LandingPage extends React.Component{
                 <div className="title-wrapper">
                     <h2>WELCOME TO 1.1 INNOVATE</h2>
                     <div className="buttons-wrapper">
-                        <div className="explore-button">EXPLORE</div>
-                        <div className="contact-button">CONTACT</div>
+                        <div className="explore-button"><Link to="/members">EXPLORE</Link></div>
+                        <div className="contact-button"><a href="https://www.gmail.com/compose">CONTACT</a></div>
                 </div>
                 </div>
                 <hr/>

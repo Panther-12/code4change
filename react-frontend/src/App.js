@@ -7,7 +7,8 @@ import About from './about-page'
 import Top_nav from './top_nav';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import Registration from './register';
-
+import SocialMedia  from './media-icons';
+import Footer from './footer';
 // Function which stores all components rendered when server runs
 // React router tranfers routing from server to frontend
 // API used to handle requests for data in a database
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <LandingPage/>
+            <Footer/>
           </Route>
           <Route exact path="/members">
             <Members/>
@@ -33,7 +35,9 @@ function App() {
             <Registration/>
           </Route>
         </Switch>
+        <SocialMedia/>
       </Router>
+      
     </div>
   );
 }
