@@ -16,10 +16,8 @@ const users = require('./routes/users_api')
 app.use('/members',users)
 
 // import the relevant middleware
-app.use(bodyParser.json)
-app.use(bodyParser.urlencoded ({
-    extended:false,
-}))
+app.use(bodyParser.urlencoded({extended:false,}))
+app.use(bodyParser.json())
 
 
 // Listen to the server
