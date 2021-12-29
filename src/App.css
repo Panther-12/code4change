@@ -1,0 +1,57 @@
+.homepage-wrapper{
+    height:fit-content;
+    width:100%;
+    margin-left: 2%;
+}
+/* logo-wrapper styles */
+.logo-wrapper{
+    margin-top: 30px;
+    align-items: center;
+}
+.logo-wrapper>img{
+    width: 200px;
+    height: 200px;
+}
+/* navigation bar styles */
+.top-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+}
+.nav-wrapper{
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.nav-wrapper a{
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color:white;
+    margin-left: 25%;
+    border-bottom: 1px transparent;
+    transition: border-bottom 1s ease;
+    font-weight: bold;
+}
+.nav-wrapper > a:hover{
+    color:grey;
+    border-bottom: 1px solid grey;
+}
+
+/* content styles */
+.content-wrapper{
+    margin-top: 7%;
+    margin-left: 2%;
+}
+#welcome{
+    font-size: 78px;
+    color: white;
+    letter-spacing: 0.5rem;
+
+}
+#site-name{
+    font-size: 58px;
+    letter-spacing: 0.5rem;
+}
+.about-wrapper{}
+.projects-wrapper{}
