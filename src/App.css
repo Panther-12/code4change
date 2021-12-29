@@ -53,5 +53,11 @@
     font-size: 58px;
     letter-spacing: 0.5rem;
 }
+/* info wrapper styles */
+.info-wrapper{
+    width:50%;
+    height: fit-content;
+    margin-top:20px;
+}
 .about-wrapper{}
 .projects-wrapper{}
