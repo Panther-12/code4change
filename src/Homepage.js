@@ -6,7 +6,6 @@ const Landingpage = () =>{
         <div className="homepage-wrapper">
             <div className="top-nav-wrapper">
                 <div className="logo-wrapper">
-                    <img src="file:///home/nimrod/CODE4CHANGE/react-frontend/src/images/LOGO.png"></img>
                 </div>
                 <div className="nav-wrapper">
                     <Link to="/">Home</Link>
