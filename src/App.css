@@ -6,7 +6,7 @@
     background-position-x: 70%;
     background-size: 30%;
     background-repeat: no-repeat;
-    background-position-y: 40%;
+    background-position-y: 45%;
     background-blend-mode: multiply;
 }
 /* logo-wrapper styles */
@@ -30,7 +30,7 @@
 }
 .nav-wrapper{
     align-items: center;
-    margin-left: 25%;
+    margin-left: 15%;
     margin-top: 30px;
 }
 .nav-wrapper a{
@@ -49,7 +49,7 @@
 
 /* content styles */
 .content-wrapper{
-    margin-top: 7%;
+    margin-top: 4%;
     margin-left: 2%;
 }
 #welcome{
@@ -66,6 +66,31 @@
 .info-wrapper{
     width:70%;
     height: fit-content;
+    transition: background-color 0.6s ease;
+    border-radius: 10px;
+}
+.info-wrapper:hover{
+    background-color: rgb(252, 177, 39,0.5);
+    
+}
+/* Buttons wrapper styles */
+.buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+}
+.buttons-wrapper>.button1{
+    border: 1px solid white;
+    padding:10px;
+    margin-left: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: orange;
+    transition: background-color 1s ease-in-out  ;
+}
+.button1:hover{
+    cursor: pointer;
+    background-color: grey;
 }
 .about-wrapper{}
 .projects-wrapper{}

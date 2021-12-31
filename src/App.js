@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import About from './about';
 import Landingpage from './Homepage';
 import Projects from './projects';
+import Admin from './Admin_panel';
 
 // All C
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About/>
+          </Route>
+          <Route exact path="/admin">
+            <Admin/>
           </Route>
         </Switch>
       </Router>
